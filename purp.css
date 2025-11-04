@@ -1,0 +1,223 @@
+:root {
+    --theme-style: light;
+    --text-dark-purple: #420039;
+    --text-purple: #7A006A;
+    --primary-color: #D9C9F8;
+    --secondary-color: #BFA5F3;
+    --tertiary-color: #A581EF;
+    --card-color: #F2EDFD;
+    --text-color: #262B2C;
+
+    --link-color: #0A8DAE !important;
+    --link-hover-color: #0A8DAE !important;
+    --card-border-color: transparent !important;
+
+    --dropdown-backdrop-filter: unset !important;
+    --menu-background-color: var(--primary-color) !important;
+    --floating-button-background-color: var(--tertiary-color) !important;
+    --floating-button-hide-button-background: var(--secondary-color) !important;
+
+    --tool-dialog-background-color: var(--card-color) !important;
+
+    --main-text-color: var(--text-color) !important;
+    --menu-text-color: var(--text-color) !important;
+    --link-hover-background: var(--secondary-color) !important;
+    --menu-item-keyboard-shortcut-color: var(--text-purple) !important;
+
+    --hover-item-text-color: var(--text-purple);
+    --muted-text-color: var(--text-dark-purple) !important;
+    --custom-color: var(--text-dark-purple) !important;
+    --main-background-color: var(--primary-color) !important;
+    --main-border-color: var(--card-color) !important;
+    --input-hover-background: var(--card-color) !important; /* Seems to not change anything but I will leave this */
+    --input-background-color: var(--tertiary-color) !important;
+    --input-placeholder-color: var(--text-dark-purple) !important;
+
+    --cmd-button-text-color: var(--text-purple) !important;
+    --cmd-button-background-color: var(--secondary-color) !important;
+
+    --left-pane-background-color: var(--secondary-color) !important;
+    --left-pane-item-selected-background: var(--primary-color) !important;
+    --left-pane-text-color: var(--text-purple) !important;
+    --left-pane-item-hover-background: --var(--card-color) !important;
+    --left-pane-icon-color: var(--text-purple) !important;
+
+    --quick-search-background: var(--tertiary-color) !important;
+    --quick-search-color: var(--text-purple) !important;
+    --quick-search-hover-background: var(--primary-color) !important;
+    --quick-search-focus-background: var(--card-color) !important;
+    --quick-search-focus-color: var(--text-dark-purple) !important;
+
+    --active-tab-text-color: var(--text-dark-purple) !important;
+    --active-tab-icon-color: var(--text-dark-purple) !important;
+    --inactive-tab-text-color: var(--text-purple) !important;
+    --inactive-tab-icon-color: var(--text-purple) !important;
+    --active-tab-background-color: var(--primary-color) !important;
+    --inactive-tab-background-color: var(--card-color) !important;
+
+    --launcher-pane-text-color: var(--text-dark-purple) !important;
+    --launcher-pane-vert-background-color: var(--tertiary-color) !important;
+    --launcher-pane-horiz-background-color: var(--tertiary-color) !important;
+    --launcher-pane-button-hover-background : var(--primary-color) !important;
+
+    --card-background-color: var(--card-color) !important;
+    --menu-background-color: var(--card-color) !important;
+
+    --right-pane-heading-color: var(--text-dark-purple) !important;
+    --right-pane-item-hover-background: var(--card-color) !important;
+
+    --modal-background-color: var(--primary-color) !important;
+    --tooltip-background-color: var(--card-color) !important;
+
+    --col-header-background-color: var(--secondary-color) !important;
+
+    --floating-button-background-color: var(--card-color) !important;
+}
+body {
+    color: var(--text-dark-purple) !important;
+}
+.note-title {
+    color: var(--text-dark-purple) !important;
+}
+.launcher-button {
+    color: var(--text-dark-purple) !important;
+}
+.scrolling-container {
+    background: none !important;
+}
+.ͼo {
+    box-shadow: none !important;
+}
+.global-menu-button svg path {
+    fill: var(--text-dark-purple) !important;
+}
+.global-menu-button:hover svg path {
+    fill: var(--text-purple) !important;
+}
+#left-pane span.fancytree-node:hover {
+background: var(--tertiary-color) !important;
+}
+::placeholder {
+    color: var(--text-dark-purple) !important;
+}
+#launcher-pane .component.launcher-button:hover {
+background-color: var(--primary-color) !important;
+}
+span.aa-suggestions div.aa-cursor {
+    color: var(--text-purple) !important;
+}
+.select-button.dropdown-toggle.btn:hover, .select-button.dropdown-toggle.btn:focus {
+    background: var(--secondary-coloRr,) var(--dropdown-arrow,) !important;
+}
+li.dropdown-item:hover:not(.disabled, .dropdown-container-item) {
+    color: var(--text-purple) !important;
+    background-color: var(--secondary-color) !important;
+}
+.dropdown-item.disabled span kbd {
+    color: var(--text-purple) !important;
+}
+.dropdown-item span kbd {
+    color: var(--text-dark-purple) !important;
+}
+.dropdown-menu.dropdown-menu-sm {
+    background-color: var(--card-color) !important;
+}
+.classic-toolbar-widget:empty:before {
+    content: 'No edit >:(';
+    vertical-align: -webkit-baseline-middle;
+}
+select.form-select:hover, .input-group:hover, select.form-control:hover, input:not([type]):hover, input[type="text"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="date"]:hover, input[type="time"]:hover, input[type="datetime-local"]:hover, :root input.ck.ck-input-text:not([readonly="true"]):hover, :root input.ck.ck-input-number:not([readonly="true"]):hover, textarea.form-control:hover, textarea:hover, :root textarea.ck.ck-textarea:hover, .tn-input-field:hover {
+    background: var(--card-color) var(--dropdown-arrow,) !important;
+    outline: 3px solid var(--input-focus-outline-color);
+    outline-offset: 0;
+}
+input.form-control.note-autocomplete.note-autocomplete-input.aa-input {
+    background: none !important;
+}
+.quick-search.input-group.input-group-sm.component {
+    background: transparent !important; /* .input-group:hover, */
+}
+input.form-control.form-control-sm.search-string {
+    background: none !important;
+}
+.floating-buttons-children {
+    background-color: var(--tertiary-color);
+}
+#left-pane .tree-actions:hover {
+backdrop-filter: none !important;
+}
+#left-pane .tree-actions:hover {
+background-color: var(--primary-color) !important;
+}
+/* why do modals exist here */
+.modal-title {
+    height: 3em !important;
+}
+input.form-control.note-title {
+    font-size: 180% !important;
+}
+.modal.popup-editor-dialog .note-icon-widget {
+    width: 2.5em !important;
+    height: 100% !important;
+}
+.component.title-row {
+    height: 3em !important;
+}
+.tabulator-col.tabulator-sortable.tabulator-col-sorter-element, .tabulator-col-content, .tabulator-header {
+    background-color: var(--secondary-color) !important;
+}
+/* Custom Icon -- I like big icons */
+.ci {
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    width: 1em;
+    height: 1em;
+    &.note-tab-icon {
+        margin-right: 0.2em;
+    }
+    &.note-icon {
+        margin: auto;
+    }
+    &.fancytree-custom-icon {
+        height: 1em;
+        width: 1em;
+    }
+}
+span.ci.note-icon {
+    margin-right: 0.2em !important;
+}
+.btn {
+    &.note-icon {
+        font-size: 2.5em !important;
+    }
+}
+.note-tab-icon {
+    font-size: 1.4em !important;
+    line-height: 1em !important;
+}
+.fancytree-custom-icon {
+    font-size: 1.5em !important;
+}
+.icon {
+    font-size: 1.5em;
+    line-height: 1em !important;
+}
+.note-suggestion {
+    display: flex;
+    align-items: flex-start;
+}
+.note-list-wrapper .note-book-card .note-book-header .note-icon {
+    font-size: 1.5em !important;
+    vertical-align: middle !important;
+}
+.note-list-wrapper .note-book-card .note-book-header {
+    font-size: 1.5em !important;
+}
+div .note-list-wrapper .note-book-card .note-book-content .rendered-content.text-with-ellipsis {
+    padding-top: 0 !important;
+}
+.board-view-container .board-note .icon {
+    display: inline-flex;
+    vertical-align: middle;
+}
