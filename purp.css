@@ -14,7 +14,7 @@
 
     --dropdown-backdrop-filter: unset !important;
     --menu-background-color: var(--primary-color) !important;
-    --floating-button-background-color: var(--tertiary-color) !important;
+    --floating-button-background-color: var(--secondary-color) !important;
     --floating-button-hide-button-background: var(--secondary-color) !important;
 
     --tool-dialog-background-color: var(--card-color) !important;
@@ -39,7 +39,7 @@
     --left-pane-background-color: var(--secondary-color) !important;
     --left-pane-item-selected-background: var(--primary-color) !important;
     --left-pane-text-color: var(--text-purple) !important;
-    --left-pane-item-hover-background: --var(--card-color) !important;
+    --left-pane-item-hover-background: var(--card-color) !important;
     --left-pane-icon-color: var(--text-purple) !important;
 
     --quick-search-background: var(--tertiary-color) !important;
@@ -70,11 +70,6 @@
     --tooltip-background-color: var(--card-color) !important;
 
     --col-header-background-color: var(--secondary-color) !important;
-
-    --floating-button-background-color: var(--card-color) !important;
-}
-body {
-    color: var(--text-dark-purple) !important;
 }
 .note-title {
     color: var(--text-dark-purple) !important;
@@ -94,9 +89,6 @@ body {
 .global-menu-button:hover svg path {
     fill: var(--text-purple) !important;
 }
-#left-pane span.fancytree-node:hover {
-background: var(--tertiary-color) !important;
-}
 ::placeholder {
     color: var(--text-dark-purple) !important;
 }
@@ -107,7 +99,7 @@ span.aa-suggestions div.aa-cursor {
     color: var(--text-purple) !important;
 }
 .select-button.dropdown-toggle.btn:hover, .select-button.dropdown-toggle.btn:focus {
-    background: var(--secondary-coloRr,) var(--dropdown-arrow,) !important;
+    background: var(--secondary-color) var(--dropdown-arrow) !important;
 }
 li.dropdown-item:hover:not(.disabled, .dropdown-container-item) {
     color: var(--text-purple) !important;
@@ -127,7 +119,7 @@ li.dropdown-item:hover:not(.disabled, .dropdown-container-item) {
     vertical-align: -webkit-baseline-middle;
 }
 select.form-select:hover, .input-group:hover, select.form-control:hover, input:not([type]):hover, input[type="text"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="date"]:hover, input[type="time"]:hover, input[type="datetime-local"]:hover, :root input.ck.ck-input-text:not([readonly="true"]):hover, :root input.ck.ck-input-number:not([readonly="true"]):hover, textarea.form-control:hover, textarea:hover, :root textarea.ck.ck-textarea:hover, .tn-input-field:hover {
-    background: var(--card-color) var(--dropdown-arrow,) !important;
+    background: var(--secondary-color) var(--dropdown-arrow) !important;
     outline: 3px solid var(--input-focus-outline-color);
     outline-offset: 0;
 }
@@ -143,13 +135,25 @@ input.form-control.form-control-sm.search-string {
 .floating-buttons-children {
     background-color: var(--tertiary-color);
 }
+#left-pane span.fancytree-node:hover {
+background: var(--tertiary-color) !important;
+}
 #left-pane .tree-actions:hover {
 backdrop-filter: none !important;
 }
 #left-pane .tree-actions:hover {
 background-color: var(--primary-color) !important;
 }
-/* why do modals exist here */
+/* headers */
+h2, h3 {
+    border-bottom: 1px dotted var(--text-purple) !important;
+    font-weight: 600 !important;
+}
+h4, h5, h6 {
+    border-bottom: none !important;
+    font-weight: 600 !important;
+}
+/* modal stuff */
 .modal-title {
     height: 3em !important;
 }
